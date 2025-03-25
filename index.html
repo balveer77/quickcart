@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCart - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: #eae9e9;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .categories, .top-selling {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .category, .product {
+            text-align: center;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .category img, .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                padding: 30px 10px;
+            }
+
+            .categories, .top-selling {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.jpg" alt="">QuickCart</div>
+        <nav>
+            <ul>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Summer Collections</h1>
+        <h2>Striped Woman Dress</h2>
+        <p>Latest fashion trends at affordable prices.</p>
+        <a href="category.html"> <button>Shop Now</button> </a>
+        <img src="images/home/download5.jpg" alt="">
+    </section>
+    
+    <section class="categories">
+        <div class="category">
+            <img src="images/home/download1.jpg" alt="Men Shirt">
+            <h3>Fashion</h3>
+        </div>
+        <div class="category">
+            <img src="images/home/download2.jpg" alt="Hoodies">
+            <h3>Electronics</h3>
+        </div>
+        <div class="category">
+            <img src="images/home/download3.jpg" alt="Smart Watch">
+            <h3>Beauty & Personal Care</h3>
+        </div>
+        <div class="category">
+            <img src="images/home/download4.jpg" alt="Women Shoes">
+            <h3>Home Goods</h3>
+        </div>
+    </section>
+
+    <section class="top-selling">
+        <h2>Top Selling Products</h2>
+        <div class="product">
+            <img src="images/home/download6.jpg" alt="Sunglasses">
+            <h3>Men Sunglasses</h3>
+            <p>$17.99</p>
+        </div>
+        <div class="product">
+            <img src="images/home/download7.jpg" alt="Sweater">
+            <h3>Women's Shoes</h3>
+            <p>$29.99</p>
+        </div>
+    </section>
+</body>
+</html>
